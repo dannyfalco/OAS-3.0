@@ -1,0 +1,17 @@
+components:
+  schemas:
+    Address:
+      type: object
+      properties:
+        street:
+          type: string
+          example: 100 Main Street
+        city:
+          type: string
+          example: Roseland
+        state:
+          type: string
+          example: NJ
+        zip:
+          type: string
+          example: '07068'

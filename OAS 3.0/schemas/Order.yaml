@@ -1,0 +1,24 @@
+components:
+  schemas:
+    Order:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+          example: 1001
+        customerId:
+          type: integer
+          format: int64
+          example: 1
+        product:
+          type: string
+          example: Puma Sneakers
+        totalPrice:
+          type: number
+          format: double
+          example: 42.00
+        status:
+          type: string
+          description: Order Status
+          enum: ["pending", "approved", "delivered"]
